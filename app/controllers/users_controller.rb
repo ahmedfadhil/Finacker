@@ -3,7 +3,9 @@ class UsersController < ApplicationController
     @user_stocks = current_user.stocks
     @user = current_user
   end
+
   def my_friends
+    @friendships = current_user.friends
   end
   # before_action :set_welcome, only: [:show, :edit, :update, :destroy]
   #
